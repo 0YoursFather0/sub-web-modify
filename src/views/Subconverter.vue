@@ -5,23 +5,6 @@
     <el-row class="subconverter-layout" style="margin-top: 10px">
       <el-col>
         <el-card class="subconverter-card">
-          <div slot="header" class="subconverter-hero">
-            <div class="subconverter-hero__copy">
-              <span class="subconverter-hero__eyebrow">SUB WEB / NEXT</span>
-              <div class="subconverter-hero__topline">
-                <h1 class="subconverter-hero__title">订阅转换</h1>
-                <div class="subconverter-hero__stats">
-                  <div class="subconverter-stat subconverter-stat--backend">
-                    <span>后端版本</span>
-                    <strong>{{ backendVersion || "等待检测" }}</strong>
-                  </div>
-                </div>
-              </div>
-              <p class="subconverter-hero__desc">
-                在线订阅转换场景，适配 Clash、Surge、Sing-Box 等常见使用环境。
-              </p>
-            </div>
-          </div>
           <el-container class="subconverter-container">
             <el-form class="subconverter-form" :model="form" label-width="92px" label-position="left" style="width: 100%">
               <el-form-item label="订阅链接:">
@@ -220,24 +203,6 @@
       </el-col>
     </el-row>
     <div class="subconverter-social-dock" aria-label="页面底部快捷入口">
-      <button class="subconverter-social-btn" type="button" @click="goToProject" aria-label="GitHub" title="GitHub">
-        <svg viewBox="0 0 24 24" fill="none" class="subconverter-social-btn__icon" aria-hidden="true">
-          <path d="M9.2 19.1v-3.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.8 1.9 1.4.9.4 1.8.3 2.5.1.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.1-3.1-.1-.3-.5-1.5.1-3 0 0 .9-.3 3.2 1.2a10.7 10.7 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.7.1 3 .7.8 1.1 1.8 1.1 3.1 0 4.4-2.7 5.3-5.3 5.7.4.4.8 1 .8 2.1v3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M8.9 18.8c-3.5 1.1-6-1.4-6-1.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <button class="subconverter-social-btn" type="button" @click="gotoTgChannel" aria-label="Telegram" title="Telegram">
-        <svg viewBox="0 0 24 24" fill="none" class="subconverter-social-btn__icon" aria-hidden="true">
-          <path d="M21 4.5 3.8 11.2c-.8.3-.8 1.4 0 1.6l4.1 1.4 1.6 5c.2.8 1.2 1 1.7.4l2.4-2.7 4.2 3.1c.7.5 1.7.1 1.9-.8L22 5.8c.2-.9-.5-1.7-1.4-1.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-          <path d="m8 14 9.1-6.7M9.5 18.5 11 14l7.6-6.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      <button class="subconverter-social-btn" type="button" @click="gotoYouTuBe" aria-label="YouTube" title="YouTube">
-        <svg viewBox="0 0 24 24" fill="none" class="subconverter-social-btn__icon" aria-hidden="true">
-          <rect x="3.5" y="6" width="17" height="12" rx="4.2" stroke="currentColor" stroke-width="1.7"/>
-          <path d="m10 9.4 5.5 2.7-5.5 2.7V9.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-        </svg>
-      </button>
       <button class="subconverter-social-btn subconverter-social-btn--theme" type="button" @click="change" aria-label="切换主题">
         <i id="rijian" class="el-icon-sunny subconverter-theme-toggle-icon"></i>
         <i id="yejian" class="el-icon-moon subconverter-theme-toggle-icon"></i>
