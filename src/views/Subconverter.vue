@@ -1288,21 +1288,18 @@ export default {
           this.loading2 = false;
         })
     },
-    getBackendVersion() {
-      this.$axios
-        .get(
-          this.form.customBackend + "/version"
-        )
-        .then(res => {
-          this.backendVersion = res.data.replace(/backend\n$/gm, "");
-          this.backendVersion = this.backendVersion.replace("subconverter", "SubConverter");
-          let b = this.form.customBackend.indexOf("127.0.0.1") !== -1;
-          b ? this.$message.success(`${this.backendVersion}` + "本地局域网自建版后端") : this.$message.success(`${this.backendVersion}`);
-        })
-        .catch(() => {
-          this.$message.error("请求SubConverter版本号返回数据失败，该后端不可用！");
-        });
-    }
+getBackendVersion() {
+  this.$axios
+    .get(this.form.customBackend + "/version")
+    .then(res => {
+      this.backendVersion = res.data
+        .replace(/backend\n$/gm, "")
+        .replace("subconverter", "SubConverter");
+    })
+    .catch(() => {
+      this.backendVersion = "不可用";
+    });
+}
   }
 };
 </script>
