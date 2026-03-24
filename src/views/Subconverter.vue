@@ -6,20 +6,8 @@
       <el-col>
         <el-card class="subconverter-card">
           <div slot="header" class="subconverter-hero">
-            <div class="subconverter-hero__copy">
-              <span class="subconverter-hero__eyebrow">SUB WEB / NEXT</span>
-              <div class="subconverter-hero__topline">
-                <h1 class="subconverter-hero__title">订阅转换</h1>
-                <div class="subconverter-hero__stats">
-                  <div class="subconverter-stat subconverter-stat--backend">
-                    <span>后端版本</span>
-                    <strong>{{ backendVersion || "等待检测" }}</strong>
-                  </div>
-                </div>
               </div>
-              <p class="subconverter-hero__desc">
-                在线订阅转换场景，适配 Clash、Surge、Sing-Box 等常见使用环境。
-              </p>
+
             </div>
           </div>
           <el-container class="subconverter-container">
