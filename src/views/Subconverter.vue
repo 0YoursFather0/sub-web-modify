@@ -276,7 +276,7 @@
       </el-tabs>
     </el-dialog>
     <el-dialog :visible.sync="dialogLoadConfigVisible" custom-class="subconverter-dialog" :show-close="true" :close-on-click-modal="false"
-      :close-on-press-escape="false" width="80%">
+      :close-on-press-escape="true" width="80%">
       <div slot="title">
         可以从生成的长/短链接中解析信息,填入页面中去
       </div>
